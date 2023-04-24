@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Diverifying Reading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="images/favicon.png">
+
+  </head>
+
+  <body>
+
+<div class="sidenav_fullScreen" id="sidenav"> <!-- sidenav -->
+
+	<div class="sidenav-text">
+    <input id="input" type="text" onkeypress="search(event)" placeholder="Search by Title, Author, or Summary" style="width:80%; margin-top:5%; font-family:serif;">
+
+	  <p id='buttons' class="buttons"></p>
+    <ul id='search_list'>
+        <li><a href="#">Loading...</a></li>
+    </ul>
+    <button href="diversifying-reading.github.io/home" id="tag_dictionary_open" class="tagDictionaryOpen" onclick="openTagDictionary()">Not sure what a tag means?</button>
+
+	</div>
+</div>
+
+<div class="box_pos" id="book_div_position">
+
+<p class="book_div" id="book_div"></p>
+
+<div id="page_buttons" style="padding-top:10px; text-align:center;">
+<p style="margin-top:0px"> <button class="previous_page_btn" style="display:none;" onclick="previousPage();" style="height:50px">< Previous</button><button class="next_page_btn"
+  style="display:none;" onclick="nextPage();"
+  style="height:50px"> Next ></button></p>
+</div>
+
+<h2 style="text-align: center" id="end_of_books_msg"></h2>
+
+<br>
+
+<div class="tagDictionary" id="tagDictionary" style="display:none;">
+  <p style="text-align:center"><b>Genres</b></p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Fiction: </b> the type of book or story that is written about imaginary characters and events and not based on real people and facts </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Non-Fiction: </b> writing that is about real events and facts, rather than stories that have been invented </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Prose: </b> written language in its ordinary form rather than poetry </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Verse: </b> writing that is arranged in short lines with a regular rhythm; poetry </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Graphic Novel: </b> a book containing a long story told mostly in pictures but with some writing </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Manga: </b> Japanese comic books that tell stories in pictures </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Fantasy: </b> a type of story or literature that is set in an imaginary world, often involving traditional myths and magical creatures and sometimes ideas or events from the real world, especially from the medieval period of history </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Urban Fantasy: </b> a subgenre of fantasy in which the fantasy narrative takes place within an urban backdrop which plays an important role in the story </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Dystopian: </b> a story that takes place in a very bad or unfair society in which there is a lot of suffering, especially an imaginary society in the future, or to the description of such a society </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Sci-Fi: </b> informal for science fiction; an imagined future, especially about space travel or other planets </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Romance: </b> a story which primarily focuses on a romantic relationship </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Historical Fiction: </b> a story set in the past, often during a significant time period, in which the time period is an important part of the setting and often of the story itself </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Mythology: </b> a story based on or relating to a myth or multiple myths </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Memoir/Autobiography: </b> a book about the life of a person, written by that person </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Mystery/Horror: </b> mystery refers to a story in which there is an unsolved question, oftentimes a crime, and an attempt to answer it. Horror refers to books in which there is an aim to scare, startle, shock, repulse, and elicit a sense of dread in the reader </p>
+
+  <hr color=#7DA468>
+  <br>
+  <hr color=#7DA468>
+
+  <p style="text-align:center"><b>Racial Representation</b></p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> African American or Black: </b>  African American refers to a person who lives in the U.S. and is a member of a race of people with dark skin that originally came from Africa. Black refers to people with black or dark brown skin, especially people who live in Africa or whose family originally came from Africa </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> AAPI: </b> abbreviation for Asian American and Pacific Islander; a person living in the United States whose family originally comes from the Far East, Southeast Asia, South Asia, or the Pacific Islands </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Latinx: </b> from Latin America, or having a family from Latin America </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Arab American or Arab: </b> Arab American refers to those who immigrated from or are descendants of immigrants who came from the predominantly Arabic-speaking nations in Southwest Asia and North Africa to the United States. Arab refers to a person from Western Asia or North Africa who speaks Arabic as a first language </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Native American: </b> a member of one of the groups of people who were living in North and South America before Europeans arrived </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Migrant Stories: </b> the literature from migrant authors, focus on the mix of multiple cultures and the journey the author took </p>
+
+  <hr color=#7DA468>
+  <br>
+  <hr color=#7DA468>
+
+  <p style="text-align:center"><b>LGBTQIA+ Representation</b></p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> LGBTQIA+: </b> an abbreviation for lesbian, gay, bisexual, transgender, queer or questioning, intersex, asexual, and more. An umbrella term for many gender identities, sexualities, and romantic orientations. Other varients, such as LGBTQ and LGBT, also serve as umbrella terms for the community </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> MLM or NBLM: </b> an abbreviation for men loving men or non-binary loving men, which refers to a romantic relationship between either two men or a non-binary person and a man </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> WLW or NBLW: </b> an abbreviation for women loving women or non-binary loving women, which refers to a romantic relationship between either two women or a non-binary person and a woman </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Transgender: </b> a person whose gender identity does not correspond with the sex registered for them at birth </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Non-Binary: </b> an umbrella term for people whose gender identities do not strictly correspond with male or female </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> AroAce: </b> a shortened version of Aromantic Asexual, which refers to people who are both aromantic and asexual, meaning experience little to no sexual or romantic attraction </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Closet Safe: </b> a story which features LGBTQIA+ themes, that are not visible on the cover or within the book's summary </p>
+
+  <hr color=#7DA468>
+  <br>
+  <hr color=#7DA468>
+
+  <p style="text-align:center"><b>Religious Representation</b></p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Jewish: </b> an ethnoreligious (ethnic and religious) group and nation originating from the Israelites and Hebrews of historical Israel and Judah  </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Muslim: </b> a follower of Islam, a monotheistic faith centered around the Quran and the teachings of Muhammad </p>
+
+  <hr color=#7DA468>
+  <br>
+  <hr color=#7DA468>
+
+  <p style="text-align:center"><b>Mental and Physical Disabilities</b></p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Character with Disability: </b> in our catalog, this is defined as a main character within a story with a physical condition that limits a person's movements, senses, or activities </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Mute/Deaf/Blind: </b> the term mute is characterized by absence of speech; the term deaf is characterized by a lack of the power of hearing; the term blind is characterized by a lack of the power of sight </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Invisible Disability: </b> a physical, mental or neurological condition that is not visible from the outside, often chronic illnesses; </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Neurodiverdent: </b> differing in mental or neurological function from what is considered typical or normal; people whose brain processes, learns, and/or behaves differently from what is considered "typical" </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Mental Health: </b> a story that adresses themes of mental health struggles, the concept of emotional, psychological, and social well-being </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Depression: </b> a story that adresses themes of depression, a common but serious mood disorder that primarily causes a persistent feeling of sadness </p>
+
+  <hr color=#7DA468>
+  <br>
+  <hr color=#7DA468>
+
+  <p style="text-align:center"><b>Target Audience</b></p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> New Adult Book or Adult Book With Teen Interest: </b> a story published for an adult audience that has additionally recieved a significant teen audience and interest </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Middle Grade: </b> books written for a audience younger than Young Adult, typically intended for readers 8 to 12 years old </p>
+  <hr color=#7DA468>
+  <p style="text-align:center"> <b> Own Voices: </b> books about characters from underrepresented/marginalized groups in which the author shares the same identity </p>
+
+  <button class="tagDictionaryClose" onclick="closeTagDictionary()">x</button>
+</div>
+
+<div class="topnav" id="topnav">
+  <img src='./images/menu_image.png' id="menu_button" class="menu_button_open" style="float:left">
+  <div class="topnav_text">
+	<a href='https://diversifying-reading.github.io/home' id="home" class="topnav_text_links" style="float:left;">Home</a>
+  <a href='https://diversifying-reading.github.io/suggest' id="suggest" class="topnav_text_links" style="float:right;">Suggest a Book</a>
+  <a href='https://diversifying-reading.github.io/resources' id="resources" class="topnav_text_links" style="float:right;">Resources</a>
+  <a href='https://diversifying-reading.github.io/search/' id="search" class="topnav_text_links" style="float:right;">Catalog</a>
+  </div>
+</div>
+
+<script src='js/book_data.js'></script>
+<script src='js/universal_topnav.js'></script>
+<script src='js/resize.js'></script>
+<script src='js/search_tags_filter.js'></script>
+  </body>
+</html>
