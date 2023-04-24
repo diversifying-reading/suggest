@@ -74,7 +74,7 @@ function resize_topnav(){
     document.getElementsByClassName("topnav_text")[0].style.paddingLeft = "14px";
     document.getElementsByClassName("topnav_text")[0].style.width = "";
 
-    document.getElementsByClassName("topnav_text")[0].innerHTML = '\n  <a href="https://diversifying-reading.github.io/home/" class="topnav_text_links" style="position:fixed; left:0px; padding-top: 8px; padding-bottom: 8px;">Home</a>\n  <a href="https://diversifying-reading.github.io/suggest/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Suggest a Book</a>\n  <a href="https://diversifying-reading.github.io/resources/" class="currentTextLink" style="float: right; padding-top: 8px; padding-bottom: 8px;">Resources</a>\n  <a href="https://diversifying-reading.github.io/search/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Catalog</a>\n  ';
+    document.getElementsByClassName("topnav_text")[0].innerHTML = '\n  <a href="https://diversifying-reading.github.io/home/" class="topnav_text_links" style="position:fixed; left:0px; padding-top: 8px; padding-bottom: 8px;">Home</a>\n  <a href="https://diversifying-reading.github.io/suggest/" class="currentTextLink" style="float: right; padding-top: 8px; padding-bottom: 8px;">Suggest a Book</a>\n  <a href="https://diversifying-reading.github.io/resources/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Resources</a>\n  <a href="https://diversifying-reading.github.io/search/" class="topnav_text_links" style="float: right; padding-top: 8px; padding-bottom: 8px;">Catalog</a>\n  ';
     document.getElementsByClassName('topnav_text')[0].style.marginLeft = "1vmin";
 
     scroll_function();
@@ -164,5 +164,5 @@ function scroll_function(){
 }
 
 if(document.getElementsByClassName("topnav_text_links").length == 4){
-  document.getElementsByClassName("topnav_text_links")[2].className = "currentTextLink";
+  document.getElementsByClassName("topnav_text_links")[1].className = "currentTextLink";
 }
