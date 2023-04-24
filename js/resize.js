@@ -103,4 +103,12 @@ setTimeout(function(){
       document.getElementById("body_text").style.paddingTop = 50 + "px";
     }
   }
+  if(mobileDevice()){
+    resize_topnav();
+    resize_sequence();
+    setTimeout(function(){
+      resize_sequence();
+    },100);
+    resize_topnav();
+  }
 },100);
