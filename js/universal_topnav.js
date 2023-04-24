@@ -48,7 +48,7 @@ function selectTopnavUpdate(){
 }
 
 function resize_topnav(){
-  let options = ["Home", "Catalog", "Resources", "Suggest a Book"];
+  let options = ["Suggest a Book", "Home", "Catalog", "Resources"];
 
   let optionsFormatted = "";
 
