@@ -54,6 +54,19 @@ addEventListener('scroll', (event) => {
   }
 });
 
+if(!mobileDevice()){
+  scroll_function();
+  resize_topnav();
+
+  if(document.documentElement.scrollTop == 0 && screenWidth >= 1390 || mobileDevice()){
+    resize_topnav();
+    document.getElementById("body_text").style.paddingTop = document.getElementById("topnav").offsetHeight - 15 + "px";
+  }
+  else{
+    document.getElementById("body_text").style.paddingTop = 50 + "px";
+  }
+}
+
 resize_sequence();
 setTimeout(function(){
   resize_sequence();
@@ -76,3 +89,16 @@ else{
   resize_sequence();
 }
 },100);
+
+if(!mobileDevice()){
+  scroll_function();
+  resize_topnav();
+
+  if(document.documentElement.scrollTop == 0 && screenWidth >= 1390 || mobileDevice()){
+    resize_topnav();
+    document.getElementById("body_text").style.paddingTop = document.getElementById("topnav").offsetHeight - 15 + "px";
+  }
+  else{
+    document.getElementById("body_text").style.paddingTop = 50 + "px";
+  }
+}
