@@ -9,6 +9,9 @@ if(mobileDevice()){
   else{
     screenWidth = screen.width;
   }
+
+  scrollOnLoad = 0.1;
+  document.documentElement.scrollTop = 0.1;
 }
 
 for(let i = 0; i < document.getElementsByClassName("topnav_text").length; i++){
