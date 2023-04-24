@@ -37,10 +37,10 @@ function selectTopnavUpdate(){
     window.location.href = "https://diversifying-reading.github.io/search/";
   }
   else if(link == "Resources"){
-    window.location.href = "https://diversifying-reading.github.io/diversifyingreadingslcpl/resources/";
+    window.location.href = "https://diversifying-reading.github.io/resources/";
   }
-  else if(link == "Suggest"){
-    window.location.href = "https://diversifying-reading.github.io/diversifyingreadingslcpl/suggest/";
+  else if(link == "Suggest a Book"){
+    window.location.href = "https://diversifying-reading.github.io/suggest/";
   }
   else if(link == "Home"){
     window.location.href = "https://diversifying-reading.github.io/home/";
