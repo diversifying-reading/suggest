@@ -1,61 +1,31 @@
-body {
-  font-family:tahoma;
+body{
   background-color: #f3ece4;
+  font-family: tahoma;
+  display:block;
 }
 
-.sidenav_largeScreen {
-  /* transition-duration: 0.2s; */
-  width: 20vw;
-  height: 100vh;
-  position: fixed;
-  top: 55px;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  border-right: 5px solid #7DA468;
+p{
+  font-size: 19px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.sidenav_largeScreen a {
-  color: white;
-  left: 15px;
+h2{
+  font-size: 27px;
 }
 
-.sidenav_smallScreen {
-  /* transition-duration: 0.2s; */
-  width: 0vw;
-  height: 100vh;
-  position: fixed;
-  top: 5vh;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  border-right: 5px solid #7DA468;
-}
+.image {
+    width:42%;
+    height:249px;
+    float: left;
+    font-style: italic;
+    text-align: center;
+    margin: 3px;
+  }
 
-.sidenav_smallScreen a {
-  color: white;
-  left: 15px;
-}
-
-.sidenav-text{
-  text-align: center;
-  overflow: scroll; /* fix this */
-}
-
-.sidenav-text a {
-  left: 15px;
-  position: relative;
-}
-
-.buttons{
-  margin-left:10%;
-  width:80%;
-}
-
-.main {
-  font-size: 28px;
-  padding: 10px;
-}
+.library{
+    width:100%;
+  }
 
 .topnav {
   position: fixed;
@@ -106,24 +76,6 @@ body {
   color:#033616;
 }
 
-/*
-.topnav_text_links {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: #7DA468;
-  color: #f2f2f2;
-  border: solid 2px #648153;
-  text-decoration: none;
-}
-
-.topnav_text_links:hover{
-  background-color: white;
-  color:#033616;
-  border: solid 2px darkgray;
-} */
-
 .select{
   float: left;
   padding-left: 0px;
@@ -136,212 +88,63 @@ body {
   font-family: Tahoma;
 }
 
-.menu_button_open{
-  height:20px;
-  float: left;
-  align-items: center;
-  background-color: #033616;
-  cursor: pointer;
-}
-
-.menu_button_closed{
-  height:20px;
-  vertical-align: middle;
-  float: left;
-  background-color: #033616;
-  cursor: pointer;
-}
-
-.book_div{
-  border: 1px solid MediumSeaGreen;
-  /* #a9ccad  */
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px;
-}
-
-.book_format{
-  border: 1px solid black;
-  height: 350px;
-  margin: 10px;
-  overflow: scroll;
-  background-color: #eae1d7;
-}
-
-.box_pos{
-}
-
-.book_img{
-	height:65%;
-  width:37%;
-  border: 7px solid black;
-  float:left;
-}
-
-.book_text{
-  text-align: center;
-  width: 54%;
-  height: 71%;
-  padding-right: 1%;
-  content: "";
-  display: inline-block;
-  float: right;
-  overflow:scroll;
-}
-
-.book_block{
-  background-color: #aaaaaa;
-  padding: 5px;
-  border-radius: 3px;
-  line-height: 2;
-  width: 99%;
-  text-align: center;
-}
-
-.pressed {
-  margin-bottom: 2px;
-  margin-right: 2px;
-  border-radius: 5px;
-  border-color: #999999;
-  color: #ffffff;
-  text-shadow: 0 1px 1px #000000;
-  background: linear-gradient(to bottom, #97b0a5 0%,#adc7ba 77%,#bccfc4 100%);
-  box-shadow: inset 0px 5px 5px 1px rgb(0 0 0 / 30%);
-  border-top-color: #789088;
-  border-left-color: #789088;
-  border-right-color: #e4fff0;
-  border-bottom-color: #e4fff0;
-}
-
-.pressed:active {
-  margin-bottom: 2px;
-  margin-right: 2px;
-  border-radius: 5px;
-  color: #000000;
-  text-shadow: 0 1px 1px #d5d5d5;
-  background: linear-gradient(to bottom, #c5d3ca 0%,#94a499 44%, #828f86 100%);
-  box-shadow: 0px 2px 5px 1px rgb(0 0 0 / 50%);
-  border-top-color: #e4fff0;
-  border-left-color: #e4fff0;
-  border-right-color: #789088;
-  border-bottom-color: #789088;
-}
-
-.unpressed {
-  margin-bottom: 2px;
-  margin-right: 2px;
-  border-radius: 5px;
-  color: #000000;
-  text-shadow: 0 1px 1px #d5d5d5;
-  background: linear-gradient(to bottom, #c5d3ca 0%,#94a499 44%, #828f86 100%);
-  box-shadow: 0px 2px 5px 1px rgb(0 0 0 / 50%);
-  border-top-color: #abb9b1;
-  border-left-color: #abb9b1;
-  border-right-color: #a1cda8;
-  border-bottom-color: #a1cda8;
-}
-
-.unpressed:active {
-  margin-bottom: 2px;
-  margin-right: 2px;
-  border-radius: 5px;
-  border-color: #999999;
-  color: #ffffff;
-  text-shadow: 0 1px 1px #000000;
-  background: linear-gradient(to bottom, #97b0a5 0%,#adc7ba 77%,#bccfc4 100%);
-  box-shadow: inset 0px 5px 5px 1px rgb(0 0 0 / 30%);
-  border-right-color: #a1cda8;
-  border-bottom-color: #a1cda8;
-  border-top-color: #abb9b1;
-  border-left-color: #abb9b1;
-}
-
-.previous_page_btn {
-  margin-right: 5px;
-  font-family: tahoma;
-  width: 140px;
-  height: 38px;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 0.3%;
-  background-color: #033616;
-  color: #FFFFFF;
-  border: 1px #000000 solid;
-  border-right: 0.5px #000000 solid;
-  border-left: 0.5px #000000 solid;
-}
-.previous_page_btn:hover{
+footer{
   background-color: #7DA468;
-  color: #033616
+  margin-left:5px;
+  margin-right:5px;
 }
 
-.next_page_btn {
-  margin-left: 5px;
-  padding: 0.3%;
-  background-color: #033616;
-  color: #FFFFFF;
-  font-family: tahoma;
-  width: 140px;
-  height: 38px;
-  font-weight: bold;
-  font-size: 20px;
-  border: 1px #000000 solid;
-  border-right: 0.5px #000000 solid;
-  border-left: 0.5px #000000 solid;
-}
-.next_page_btn:hover{
-  background-color: #7DA468;
-  color: #033616
-}
-
-.bookLink{
-  position: relative;
-  border:1px solid black;
-  background-color: black;
-}
-
-.ebookLink{
-  position: relative;
-  border: 1px solid black;
-  background-color: black;
-}
-
-.audiobookLink{
-  position: relative;
-  border: 1px solid black;
-  background-color: black;
-}
-
-.linkToSLCPL{
-  display:block;
-  height:0px;
-  width:0px;
-}
-
-.tagDictionary{
-  height: 90vh;
-  top: 5vh;
-  position: fixed;
-  background-color:#c6d6bd;
-  border: 2px solid #7DA468;
-  overflow:scroll;
-}
-
-.tagDictionaryClose{
-  background-color: #7DA468;
-  color: #033616;
-  width:36px;
-  height:36px;
-  position:fixed;
-  border: 2px solid #033616;
-}
-
-.tagDictionaryClose:hover{
-  background-color: #033616;
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  height: 5;
+  border-width: 3.5px;
   color: #7DA468;
 }
 
-.tagDictionaryOpen{
-  font-family:serif;
-  font-size:12px;
+.now{
+  background-color: #7DA468;
+}
+
+.section1{
+  background-color: #7DA468;
+  padding-top: 5px;
+}
+
+.section2{
+  background-color: #033616;
+  color: white;
+  margin-top:15px;
+}
+
+.aboutUsLinks{
+  color: indigo;
+  text-decoration: none;
+}
+
+a{
+  color: darkslateblue;
+}
+
+header{
+  text-align:center;
+  background-color: rgb(188, 212, 174);
+}
+
+aside.maintext {
+  max-width: 2000px;
+}
+
+aside.maintext p {
+  white-space: normal;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+}
+
+div.gallery img {
+  width: 300px;
+  height: 200px;
 }
