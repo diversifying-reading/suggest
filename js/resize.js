@@ -19,6 +19,9 @@ addEventListener('resize', (event) => {
       for(i=0; i<document.getElementsByTagName("p").length; i++){
         document.getElementsByTagName("p")[i].style.fontSize = "38px"
       }
+      for(i=0; i<document.getElementsByTagName("a").length; i++){
+        document.getElementsByTagName("a")[i].style.fontSize = "38px"
+      }
       for(i=0; i<document.getElementsByTagName("h2").length; i++){
         document.getElementsByTagName("h2")[i].style.fontSize = "54px"
       }
